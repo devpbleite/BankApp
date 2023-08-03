@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BankApp</string>
+    <string name="txt_user">Olá, Pablo!</string>
+</resources>

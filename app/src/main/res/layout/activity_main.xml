@@ -9,7 +9,7 @@
     
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/linear_degrade">
         
         <View
@@ -17,7 +17,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/container_circle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -40,8 +40,10 @@
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/containerCircle"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginTop="30dp"
-            android:layout_marginStart="20dp"/>
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="30dp"/>
         
         <ImageView
             android:id="@+id/ic_eye"
@@ -50,7 +52,7 @@
             android:src="@drawable/ic_eye"
             app:layout_constraintStart_toEndOf="@id/containerCircle"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="40dp"
             android:layout_marginStart="150dp"/>
     
         <ImageView
@@ -61,7 +63,7 @@
             app:layout_constraintStart_toEndOf="@id/ic_eye"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="@id/ic_add_person"
-            android:layout_marginTop="60dp"/>
+            android:layout_marginTop="40dp"/>
     
         <ImageView
             android:id="@+id/ic_add_person"
@@ -70,12 +72,26 @@
             android:src="@drawable/ic_add_person"
             app:layout_constraintStart_toEndOf="@id/ic_question"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintEnd_toEndOf="parent"/>
-        
     
     
     </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_saldo_conta"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerIcPagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
 </LinearLayout>

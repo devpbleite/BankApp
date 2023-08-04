@@ -110,13 +110,13 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_pix"
+                android:src="@drawable/ic_credit_card"
                 android:layout_margin="20dp"/>
             
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Meus Cartões"
+                android:text="@string/txt_cartoes"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
